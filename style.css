@@ -22,3 +22,11 @@ ul li {
 h1 {
   font-family: teko;
 }
+
+i.far, i.fab {
+  font-size: 30pt;
+}
+
+i.far:hover, i.fab:hover {
+  color: blue;
+}
