@@ -9,6 +9,9 @@ body {
   flex-direction: column;
   align-items: center;
   font-family: libre franklin;
+  background-image: url(assets/background.png);
+  background-size: 200px;
+
 }
 
 ul {
@@ -21,6 +24,7 @@ ul li {
 
 h1 {
   font-family: teko;
+  font-size: 72pt;
 }
 
 i.far, i.fab {
@@ -29,4 +33,24 @@ i.far, i.fab {
 
 i.far:hover, i.fab:hover {
   color: blue;
+}
+
+header {
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(46,66,99);
+    color: white;
+}
+
+iframe {
+  margin: 15px;
+}
+
+a:active {
+  color: yellow;
+}
+
+a:visited {
+  color: rgb(220,105,94);
 }
