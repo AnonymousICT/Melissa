@@ -50,3 +50,7 @@ iframe {
 a:visited {
   color: rgb(220,105,94);
 }
+
+@media screen and (min-width: 768) {
+  
+}
