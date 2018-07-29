@@ -54,3 +54,10 @@ a, a:active, a:visited {
 a:hover {
   color:yellow;
 }
+
+/*forms*/
+textarea {
+  resize:none;
+  width:480px;
+  height:240px;
+}
