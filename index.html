@@ -34,9 +34,18 @@
 		<template id="contact">
 			<section role="region">
 				<form>
-					<legend>Use the form below to email me</legend>
-					First name:<br>
-					<input type="" name="">
+					<fieldset>
+						<legend>Use the form below to email me</legend>
+						First name:<br>
+						<input type="text" name="firstname" placeholder="Melissa" required><br>
+						Last name: <br>
+						<input type="text" name="lastname" placeholder="Palacios" required>
+						Your email:<br>
+						<input type="email" name="email" required>
+						Your Message: <br>
+						<input type="text" name="message" required>
+						<input type="submit" value="submit">
+					</fieldset>
 				</form>
 			</section>
 		</template>
