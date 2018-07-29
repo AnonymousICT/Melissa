@@ -47,10 +47,11 @@ iframe {
   margin: 15px;
 }
 
-a:active {
-  color: yellow;
+
+a, a:active, a:visited {
+  color: rgb(220,105,94);
 }
 
-a:visited {
-  color: rgb(220,105,94);
+a:hover {
+  color:yellow;
 }
