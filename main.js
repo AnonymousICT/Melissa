@@ -1,7 +1,6 @@
 $(function() {
 
 
-
 //displays visual development images
 // $('#art #visdev').
 
@@ -21,7 +20,7 @@ $('#art #gallery').append(galleryStr);
 
 
 
-});
+}); //document.ready
 
 function eventListener () {
 	

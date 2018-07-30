@@ -9,31 +9,25 @@ body {
   flex-direction: column;
   align-items: center;
   font-family: libre franklin;
+  color:rgb(46,66,99);
   background-image: url(assets/bg.png);
   background-size: 200px;
-
 }
 
 ul {
   list-style: none;
 }
-
 ul li {
   display: inline-block;
 }
 
-h1 {
-  font-family: teko;
-  font-size: 72pt;
+a, a:active, a:visited {
+  color: rgb(220,105,94);
+}
+a:hover {
+  color:yellow;
 }
 
-i.far, i.fab {
-  font-size: 30pt;
-}
-
-i.far:hover, i.fab:hover {
-  color: blue;
-}
 
 header {
     text-align: center;
@@ -43,16 +37,13 @@ header {
     color: white;
 }
 
+h1 {
+  font-family: teko;
+  font-size: 72pt;
+}
+
 iframe {
   margin: 15px;
-}
-
-a, a:active, a:visited {
-  color: rgb(220,105,94);
-}
-
-a:hover {
-  color:yellow;
 }
 
 /*illustrations*/
@@ -73,4 +64,17 @@ textarea {
   resize:none;
   width:480px;
   height:240px;
+}
+
+/*footer*/
+footer {
+  text-align: center;
+  font-weight:bold;
+}
+i.far, i.fab {
+  font-size: 30pt;
+  background:rgba(255,255,255,0.5);
+}
+i.far:hover, i.fab:hover {
+  color: rgb(46,66,99);
 }
