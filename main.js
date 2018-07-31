@@ -76,7 +76,15 @@ function renderIllustrationPage () {
 			<section id="gallery" role="region">
 				<h2>Gallery</h2>
 			</section>`)
-}
+    //populate thumbnail gallery and link to full versions
+    let galleryStr = "";
+    for (let j=0; j<10; j++) {
+      galleryStr+='<a href="assets/ils/0'+j+'.png"><img src="assets/ils_thumbs/0'+j+'.png" class="thumb" /></a>';
+    }
+    for (let j=10; j<23; j++) {
+      galleryStr+='<a href="assets/ils/'+j+'.png"><img src="assets/ils_thumbs/'+j+'.png" class="thumb" /></a>';
+    }
+    $('#gallery').append(galleryStr);}
 
 function renderContactPage() {
 	$('main').html(`<section role="region">
