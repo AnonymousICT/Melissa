@@ -80,14 +80,15 @@ function renderIllustrationPage () {
 
 function renderContactPage() {
 	$('main').html(`<section role="region">
-				<form>
+				<form action="mailto:mapalacios089@gmail.com" method="post" enctype="text/plain">
 					<fieldset>
 						<legend>Use the form below to email me</legend>
 						<input type="text" name="firstname" placeholder="First Name" required><br />
 						<input type="text" name="lastname" placeholder="Last Name" required><br />
 						<input type="email" name="email" placeholder="Email Address" required><br />
 						<textarea name="message" placeholder="Message..." required></textarea><br />
-						<input type="submit" value="submit">
+						<input type="submit" value="Send">
+						<input type="reset" value="Reset">
 					</fieldset>
 				</form>
 			</section>`)
