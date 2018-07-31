@@ -1,7 +1,7 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -31,11 +31,11 @@ a:hover {
 
 
 header {
-    text-align: center;
-    width: 100%;
-    padding: 10px;
-    background-color: rgb(46,66,99);
-    color: white;
+  text-align: center;
+  width: 100%;
+  padding: 10px;
+  background-color: rgb(46,66,99);
+  color: white;
 }
 
 h1 {
@@ -47,30 +47,47 @@ iframe {
   margin: 15px;
 }
 
-
-
 a:visited {
   color: rgb(220,105,94);
 }
 
 @media screen and (min-width: 768) {
-  
 }
 
 /*illustrations*/
-#art {
-  background: rgba(46,66,99,0.25);
+#visdev, #gallery {
+  align-items:center;
+  text-align:center;
+  width:800px !important;
+  margin:20px auto;
+  /*background: rgba(46,66,99,0.25);*/
 }
-.thumb {
-  background:#fff;
-  width:300px;
-  height:200px;
-  margin:10px;
-  border:2px solid rgba(46,66,99,0.5);
+.carousel {
+  max-width:90%;
   padding:5px;
+  border:2px solid rgba(46,66,99,0.5);
+  margin:0 auto 20px;
+}
+.carousel-control-prev-icon {
+  background: transparent no-repeat center center url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+.carousel-control-next-icon {
+  background: transparent no-repeat center center url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+#memleak .carousel-control-prev-icon {
+  background: transparent no-repeat center center url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+#memleak .carousel-control-next-icon {
+  background: transparent no-repeat center center url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+.img-thumbnail {
+  max-width:30%;
+  padding:5px;
+  border:2px solid rgba(46,66,99,0.5);
+  margin:10px;
 }
 
-/*form*/
+/*contact form*/
 textarea {
   resize:none;
   width:480px;
@@ -88,8 +105,4 @@ i.far, i.fab {
 }
 i.far:hover, i.fab:hover {
   color: rgb(46,66,99);
-<<<<<<< HEAD
-
-=======
->>>>>>> b5cbecc8db73195307d89e4d4c4fa24d1281eae7
 }
