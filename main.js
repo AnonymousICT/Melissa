@@ -97,12 +97,18 @@ function renderContactPage() {
 function eventListener () {
 	//when the user clicks on home link
 	$('main').on('click', '#home', function(){
+		event.preventDefault();
+		console.log('you clicked home')
 		renderStartPage();
 	});
 	$('main').on('click', '#art', function(){
+		event.preventDefault();
+		console.log('you clicked illustrations')
 		renderIllustrationPage();
 	})
 	$('main').on('click','#contact', function(){
+		event.preventDefault();
+		console.log('you clicked contact')
 		renderContactPage();
 	})
 }
