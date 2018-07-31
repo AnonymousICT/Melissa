@@ -1,3 +1,4 @@
+'use strict'
 $(function() {
 
 //displays visual development images
@@ -17,10 +18,7 @@ $('#art #gallery').append(galleryStr);
 //Make form submission functional
 // $('#contact form').submit();
 
-
-
-
-}); //document.ready
+});
 function renderStartPage() {
 	$('main').html(`<section role="region">
 			<iframe src="https://player.vimeo.com/video/247865289" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen title="Demo Reel" aria-hidden="true"></iframe>
@@ -28,7 +26,56 @@ function renderStartPage() {
 }
 
 function renderIllustrationPage () {
+	$('main').html(`<section id="visdev" role="region">
+				<h2>Visual Development</h2>
+				<div id="busstop">
+					<h3>Bus Stop Project</h3>
+					<a href="assets/visdev/busstop/storybrd_BUS_STOP_1A.jpg"><img src="assets/visdev/busstop/storybrd_BUS_STOP_1A.jpg" class="thumb" /></a>
+					<a href="assets/visdev/busstop/storybrd_BUS_STOP_1B.jpg"><img src="assets/visdev/busstop/storybrd_BUS_STOP_1B.jpg" class="thumb" /></a>
+					<a href="assets/visdev/busstop/storybrd_BUS_STOP_1E.jpg"><img src="assets/visdev/busstop/storybrd_BUS_STOP_1E.jpg" class="thumb" /></a>
+					<a href="assets/visdev/busstop/storybrd_BUS_STOP_1G.jpg"><img src="assets/visdev/busstop/storybrd_BUS_STOP_1G.jpg" class="thumb" /></a>
+					<a href="assets/visdev/busstop/storybrd_BUS_STOP_1H.jpg"><img src="assets/visdev/busstop/storybrd_BUS_STOP_1H.jpg" class="thumb" /></a>
+					<a href="assets/visdev/busstop/storybrd_BUS_STOP_1J.jpg"><img src="assets/visdev/busstop/storybrd_BUS_STOP_1J.jpg" class="thumb" /></a>
+					<a href="assets/visdev/busstop/storybrd_BUS_STOP_1K.jpg"><img src="assets/visdev/busstop/storybrd_BUS_STOP_1K.jpg" class="thumb" /></a>
+				</div>
+				<div id="sync">
+					<h3>SYNC Project</h3>
+					<a href="assets/visdev/sync/sync_01/1A.jpg"><img src="assets/visdev/sync/sync_01/1A.jpg" class="thumb" /></a>
+					<a href="assets/visdev/sync/sync_01/1A02.jpg"><img src="assets/visdev/sync/sync_01/1A02.jpg" class="thumb" /></a>
+					<a href="assets/visdev/sync/sync_01/1A03.jpg"><img src="assets/visdev/sync/sync_01/1A03.jpg" class="thumb" /></a>
+					<a href="assets/visdev/sync/sync_01/1A04.jpg"><img src="assets/visdev/sync/sync_01/1A04.jpg" class="thumb" /></a>
+					<a href="assets/visdev/sync/sync_01/1B.jpg"><img src="assets/visdev/sync/sync_01/1B.jpg" class="thumb" /></a>
+					<a href="assets/visdev/sync/sync_01/1B02.jpg"><img src="assets/visdev/sync/sync_01/1B02.jpg" class="thumb" /></a>
+					<a href="assets/visdev/sync/sync_01/1B03.jpg"><img src="assets/visdev/sync/sync_01/1B03.jpg" class="thumb" /></a>
+					<a href="assets/visdev/sync/sync_01/1C.jpg"><img src="assets/visdev/sync/sync_01/1C.jpg" class="thumb" /></a>
+					<a href="assets/visdev/sync/sync_01/1D.jpg"><img src="assets/visdev/sync/sync_01/1D.jpg" class="thumb" /></a>
+					<a href="assets/visdev/sync/sync_01/1D02.jpg"><img src="assets/visdev/sync/sync_01/1D02.jpg" class="thumb" /></a>
+					<a href="assets/visdev/sync/sync_01/1D03.jpg"><img src="assets/visdev/sync/sync_01/1D03.jpg" class="thumb" /></a>
 
+					<h3>SYNC Project: Memory Leak 07</h3>
+					<a href="assets/visdev/sync/memleak_07/7.5A.jpg"><img src="assets/visdev/sync/memleak_07/7.5A.jpg" class="thumb" /></a>
+					<a href="assets/visdev/sync/memleak_07/7.5A02.jpg"><img src="assets/visdev/sync/memleak_07/7.5A02.jpg" class="thumb" /></a>
+					<a href="assets/visdev/sync/memleak_07/7.5A03.jpg"><img src="assets/visdev/sync/memleak_07/7.5A03.jpg" class="thumb" /></a>
+					<a href="assets/visdev/sync/memleak_07/7.5A04.jpg"><img src="assets/visdev/sync/memleak_07/7.5A04.jpg" class="thumb" /></a>
+					<a href="assets/visdev/sync/memleak_07/7.5B.jpg"><img src="assets/visdev/sync/memleak_07/7.5B.jpg" class="thumb" /></a>
+					<a href="assets/visdev/sync/memleak_07/7.5B02.jpg"><img src="assets/visdev/sync/memleak_07/7.5B02.jpg" class="thumb" /></a>
+					<a href="assets/visdev/sync/memleak_07/7A.jpg"><img src="assets/visdev/sync/memleak_07/7A.jpg" class="thumb" /></a>
+					<a href="assets/visdev/sync/memleak_07/7A02.jpg"><img src="assets/visdev/sync/memleak_07/7A02.jpg" class="thumb" /></a>
+					<a href="assets/visdev/sync/memleak_07/7B.jpg"><img src="assets/visdev/sync/memleak_07/7B.jpg" class="thumb" /></a>
+					<a href="assets/visdev/sync/memleak_07/7C.jpg"><img src="assets/visdev/sync/memleak_07/7C.jpg" class="thumb" /></a>
+					<a href="assets/visdev/sync/memleak_07/7D.jpg"><img src="assets/visdev/sync/memleak_07/7D.jpg" class="thumb" /></a>
+					<a href="assets/visdev/sync/memleak_07/7E.jpg"><img src="assets/visdev/sync/memleak_07/7E.jpg" class="thumb" /></a>
+					<a href="assets/visdev/sync/memleak_07/7E02.jpg"><img src="assets/visdev/sync/memleak_07/7E02.jpg" class="thumb" /></a>
+					<a href="assets/visdev/sync/memleak_07/7G.jpg"><img src="assets/visdev/sync/memleak_07/7G.jpg" class="thumb" /></a>
+					<a href="assets/visdev/sync/memleak_07/7G02.jpg"><img src="assets/visdev/sync/memleak_07/7G02.jpg" class="thumb" /></a>
+					<a href="assets/visdev/sync/memleak_07/7H.jpg"><img src="assets/visdev/sync/memleak_07/7H.jpg" class="thumb" /></a>
+					<a href="assets/visdev/sync/memleak_07/7H02.jpg"><img src="assets/visdev/sync/memleak_07/7H02.jpg" class="thumb" /></a>
+					<a href="assets/visdev/sync/memleak_07/7H03.jpg"><img src="assets/visdev/sync/memleak_07/7H03.jpg" class="thumb" /></a>
+				</div>
+			</section>
+			<section id="gallery" role="region">
+				<h2>Gallery</h2>
+			</section>`)
 }
 
 function renderContactPage() {
@@ -49,11 +96,13 @@ function renderContactPage() {
 
 function eventListener () {
 	//when the user clicks on home link
-	$('main').on('click', '.home', function(){
+	$('main').on('click', '#home', function(){
 		renderStartPage();
 	});
-
-	$('main').on('click','.contact', function(){
+	$('main').on('click', '#art', function(){
+		renderIllustrationPage();
+	})
+	$('main').on('click','#contact', function(){
 		renderContactPage();
 	})
 }
