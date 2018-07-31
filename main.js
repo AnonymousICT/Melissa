@@ -21,13 +21,45 @@ $('#art #gallery').append(galleryStr);
 
 
 }); //document.ready
+function renderStartPage() {
+	$('main').html(`<section role="region">
+			<iframe src="https://player.vimeo.com/video/247865289" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen title="Demo Reel" aria-hidden="true"></iframe>
+		</section>`)
+}
 
-
-function eventListener () {
+function renderIllustrationPage () {
 
 }
 
-function initializePortfolio() {
+function renderContactPage() {
+	$('main').html(`<section role="region">
+				<form>
+					<fieldset>
+						<legend>Use the form below to email me</legend>
+						<input type="text" name="firstname" placeholder="First Name" required><br />
+						<input type="text" name="lastname" placeholder="Last Name" required><br />
+						<input type="email" name="email" placeholder="Email Address" required><br />
+						<textarea name="message" placeholder="Message..." required></textarea><br />
+						<input type="submit" value="submit">
+					</fieldset>
+				</form>
+			</section>`)
+}
 
+
+function eventListener () {
+	//when the user clicks on home link
+	$('main').on('click', '.home', function(){
+		renderStartPage();
+	});
+
+	$('main').on('click','.contact', function(){
+		renderContactPage();
+	})
+}
+
+function initializePortfolio() {
+	eventListener();
+	renderStartPage();
 }
 $(initializePortfolio);
