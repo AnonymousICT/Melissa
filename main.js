@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-=======
 $(function() {
-
->>>>>>> b5cbecc8db73195307d89e4d4c4fa24d1281eae7
 
 //displays visual development images
 // $('#art #visdev').
@@ -23,11 +19,10 @@ $('#art #gallery').append(galleryStr);
 
 
 
-<<<<<<< HEAD
-=======
+
 }); //document.ready
 
->>>>>>> b5cbecc8db73195307d89e4d4c4fa24d1281eae7
+
 function eventListener () {
 
 }
