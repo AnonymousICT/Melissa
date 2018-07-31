@@ -5,7 +5,7 @@ function renderStartPage() {
     </section>`);
 }
 
-function renderIllustrationPage () {
+function renderVisDevPage () {
   $('main').html(`
     <section id="visdev" role="region">
         <h2>Visual Development</h2>
@@ -162,20 +162,26 @@ function renderIllustrationPage () {
 
         </div>
       </section>
-      <section id="gallery" role="region">
-        <h2>Gallery</h2>
-      </section>
-    `);
+  `);
+}
 
-    //populate thumbnail gallery and link to full versions
-    let galleryStr = "";
-    for (let j=0; j<10; j++) {
-      galleryStr+='<a href="assets/ils/0'+j+'.png"><img src="assets/ils_thumbs/0'+j+'.png" class="img-thumbnail" /></a>';
-    }
-    for (let j=10; j<23; j++) {
-      galleryStr+='<a href="assets/ils/'+j+'.png"><img src="assets/ils_thumbs/'+j+'.png" class="img-thumbnail" /></a>';
-    }
-    $('#gallery').append(galleryStr);}
+function renderIllustrationPage () {
+  $('main').html(`
+    <section id="gallery" role="region">
+      <h2>Gallery</h2>
+    </section>`
+  );
+
+  //populate thumbnail gallery and link to full versions
+  let galleryStr = "";
+  for (let j=0; j<10; j++) {
+    galleryStr+='<a href="assets/ils/0'+j+'.png"><img src="assets/ils_thumbs/0'+j+'.png" class="img-thumbnail" /></a>';
+  }
+  for (let j=10; j<23; j++) {
+    galleryStr+='<a href="assets/ils/'+j+'.png"><img src="assets/ils_thumbs/'+j+'.png" class="img-thumbnail" /></a>';
+  }
+  $('#gallery').append(galleryStr);
+}
 
 function renderContactPage() {
   $('main').html(`
@@ -202,7 +208,12 @@ function eventListener () {
     console.log('you clicked home');
     renderStartPage();
   });
-  $('header').on('click', '#art', function(event){
+  $('header').on('click', '#art-vis', function(event){
+    event.preventDefault();
+    console.log('you clicked visual development');
+    renderVisDevPage();
+  });
+  $('header').on('click', '#art-ils', function(event){
     event.preventDefault();
     console.log('you clicked illustrations');
     renderIllustrationPage();
