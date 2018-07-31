@@ -69,6 +69,12 @@ a:visited {
   border:2px solid rgba(46,66,99,0.5);
   margin:0 auto 20px;
 }
+.carousel-indicators li {
+  background:#bbb;
+}
+.carousel-indicators li.active {
+  background:rgb(220,105,94);
+}
 .carousel-control-prev-icon {
   background: transparent no-repeat center center url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23666' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
   margin-right:50px;

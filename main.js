@@ -12,6 +12,14 @@ function renderVisDevPage () {
         <div id="busstop">
           <h3>Storyboards for "Bus Stop" Project</h3>
           <div id="busstop-carousel" class="carousel slide" data-ride="carousel" data-interval="false">
+            <ol class="carousel-indicators">
+              <li data-target="#busstop-carousel" data-slide-to="0" class="active"></li>
+              <li data-target="#busstop-carousel" data-slide-to="1"></li>
+              <li data-target="#busstop-carousel" data-slide-to="2"></li>
+              <li data-target="#busstop-carousel" data-slide-to="3"></li>
+              <li data-target="#busstop-carousel" data-slide-to="4"></li>
+              <li data-target="#busstop-carousel" data-slide-to="5"></li>
+            </ol>
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img src="assets/visdev/busstop/storybrd_BUS_STOP_1A.jpg" class="d-block w-100" />
@@ -46,6 +54,19 @@ function renderVisDevPage () {
         <div id="sync">
           <h3>Storyboards for "SYNC" Project</h3>
           <div id="sync01-carousel" class="carousel slide" data-ride="carousel" data-interval="false">
+            <ol class="carousel-indicators">
+              <li data-target="#sync01-carousel" data-slide-to="0" class="active"></li>
+              <li data-target="#sync01-carousel" data-slide-to="1"></li>
+              <li data-target="#sync01-carousel" data-slide-to="2"></li>
+              <li data-target="#sync01-carousel" data-slide-to="3"></li>
+              <li data-target="#sync01-carousel" data-slide-to="4"></li>
+              <li data-target="#sync01-carousel" data-slide-to="5"></li>
+              <li data-target="#sync01-carousel" data-slide-to="6"></li>
+              <li data-target="#sync01-carousel" data-slide-to="7"></li>
+              <li data-target="#sync01-carousel" data-slide-to="8"></li>
+              <li data-target="#sync01-carousel" data-slide-to="9"></li>
+              <li data-target="#sync01-carousel" data-slide-to="10"></li>
+            </ol>
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img src="assets/visdev/sync/sync_01/1A.jpg" class="d-block w-100" />
@@ -94,6 +115,26 @@ function renderVisDevPage () {
         <div id="memleak">
           <h3>Storyboards for "SYNC" Project: Memory Leak 07</h3>
           <div id="memleak-carousel" class="carousel slide" data-ride="carousel" data-interval="false">
+            <ol class="carousel-indicators">
+              <li data-target="#memleak-carousel" data-slide-to="0" class="active"></li>
+              <li data-target="#memleak-carousel" data-slide-to="1"></li>
+              <li data-target="#memleak-carousel" data-slide-to="2"></li>
+              <li data-target="#memleak-carousel" data-slide-to="3"></li>
+              <li data-target="#memleak-carousel" data-slide-to="4"></li>
+              <li data-target="#memleak-carousel" data-slide-to="5"></li>
+              <li data-target="#memleak-carousel" data-slide-to="6"></li>
+              <li data-target="#memleak-carousel" data-slide-to="7"></li>
+              <li data-target="#memleak-carousel" data-slide-to="8"></li>
+              <li data-target="#memleak-carousel" data-slide-to="9"></li>
+              <li data-target="#memleak-carousel" data-slide-to="10"></li>
+              <li data-target="#memleak-carousel" data-slide-to="11"></li>
+              <li data-target="#memleak-carousel" data-slide-to="12"></li>
+              <li data-target="#memleak-carousel" data-slide-to="13"></li>
+              <li data-target="#memleak-carousel" data-slide-to="14"></li>
+              <li data-target="#memleak-carousel" data-slide-to="15"></li>
+              <li data-target="#memleak-carousel" data-slide-to="16"></li>
+              <li data-target="#memleak-carousel" data-slide-to="17"></li>
+            </ol>
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img src="assets/visdev/sync/memleak_07/7.5A.jpg" class="d-block w-100" /></a>
