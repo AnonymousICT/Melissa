@@ -1,7 +1,7 @@
 'use strict'
 function renderStartPage() {
   $('main').html(`<section role="region">
-      <iframe src="https://player.vimeo.com/video/247865289" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen title="Demo Reel" aria-hidden="true"></iframe>
+      <iframe src="https://player.vimeo.com/video/247865289" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
     </section>`);
 }
 
