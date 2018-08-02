@@ -83,12 +83,21 @@ a:visited {
   background: transparent no-repeat center center url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23666' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
   margin-left:50px;
 }
+
+/*gallery*/
 .img-thumbnail {
   max-width:30%;
   padding:5px;
   border:2px solid rgba(46,66,99,0.5);
   margin:10px;
 }
+.ekko-lightbox-nav-overlay a, .ekko-lightbox-nav-overlay a:visited, .ekko-lightbox-nav-overlay a:hover, .ekko-lightbox-nav-overlay a:active {
+  font-size:100pt;
+  /*color:#666;*/
+  color:rgb(220,105,94);
+  text-decoration:none;
+}
+
 
 /*contact form*/
 textarea {

@@ -214,13 +214,13 @@ function renderIllustrationPage () {
   );
 
   //populate thumbnail gallery and link to full versions
-  let galleryStr = "";
+  let galleryStr = '';
   for (let j=0; j<10; j++) {
-    galleryStr+='<a href="assets/ils/0'+j+'.png"><img src="assets/ils_thumbs/0'+j+'.png" class="img-thumbnail" /></a>';
-  }
+    galleryStr+='<a href="assets/ils/0'+j+'.png" data-toggle="lightbox" data-gallery="illustrations-gallery"><img src="assets/ils_thumbs/0'+j+'.png" class="img-thumbnail img-fluid" /></a>';
+  };
   for (let j=10; j<23; j++) {
-    galleryStr+='<a href="assets/ils/'+j+'.png"><img src="assets/ils_thumbs/'+j+'.png" class="img-thumbnail" /></a>';
-  }
+    galleryStr+='<a href="assets/ils/'+j+'.png" data-toggle="lightbox" data-gallery="illustrations-gallery"><img src="assets/ils_thumbs/'+j+'.png" class="img-thumbnail img-fluid" /></a>';
+  };
   $('#gallery').append(galleryStr);
 }
 
@@ -263,6 +263,16 @@ function eventListener () {
     event.preventDefault();
     console.log('you clicked contact');
     renderContactPage();
+  });
+  $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+    event.preventDefault();
+    $(this).ekkoLightbox({
+      // alwaysShowClose:true,
+      leftArrow:'<',
+      rightArrow:'<span class="banano">></span>',
+      showArrows:true,
+      wrapping:true
+    });
   });
 }
 
