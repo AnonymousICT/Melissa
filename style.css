@@ -72,16 +72,22 @@ form {
 input {
   margin-bottom: 10px;
 }
-
-@media screen and (min-width: 768) {
-
+@media screen and (max-width: 768) {
+  #visdev {
+    width:70%;
+  }
+}
+@media screen and (max-width: 450) {
+  #visdev {
+    width: 100%;
+  }
 }
 
 /*illustrations*/
 #visdev, #gallery {
   align-items:center;
   text-align:center;
-  width:800px !important;
+  width:100%;
   margin:20px auto;
   /*background: rgba(46,66,99,0.25);*/
 }
