@@ -68,6 +68,11 @@ form {
   margin: 15px;
   background-color: rgba(125, 112, 186,.5);
 }
+
+input {
+  margin-bottom: 10px;
+}
+
 @media screen and (min-width: 768) {
 
 }
