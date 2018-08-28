@@ -1,9 +1,10 @@
 'use strict'
 function renderStartPage() {
   $('main').html(`<section role="region">
-      <iframe src="https://player.vimeo.com/video/247865289" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-    </section>`);
+    <div class="embed-container"><iframe src="https://player.vimeo.com/video/247865289" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
+  </section>`);
 }
+
 
 function addCarouselImages(folder,maxnum) {
   let tempStr=`
