@@ -28,7 +28,7 @@ ul li {
   margin: 0px 5px;
 }
 
-a, a: visited {
+a, a:visited {
   color: #E7955D;
 }
 
@@ -49,7 +49,11 @@ h2, h3, h4, h5, h6 {
   font-weight: bold;
 }
 
-/*vimeo embed*/
+/*video embed*/
+.vimeo-headings {
+  margin-bottom: -2rem;
+}
+
 iframe {
   border: none;
   width: 50vw;
@@ -63,11 +67,6 @@ iframe {
   width: 70vw;
   left: -10px;
   bottom: 15px;
-}
-
-.vimeo-headings {
-  /*margin-top: 2rem;*/
-  margin-bottom: -1rem;
 }
 
 .embed-container iframe,
@@ -137,9 +136,8 @@ input {
   border: 2px solid rgba(46,66,99,0.5);
   margin: 10px;
 }
-.ekko-lightbox-nav-overlay a, .ekko-lightbox-nav-overlay a: visited, .ekko-lightbox-nav-overlay a: hover, .ekko-lightbox-nav-overlay a: active {
+.ekko-lightbox-nav-overlay a, .ekko-lightbox-nav-overlay a:visited, .ekko-lightbox-nav-overlay a:hover, .ekko-lightbox-nav-overlay a:active {
   font-size: 100pt;
-  /*color: #666;*/
   color: rgb(220,105,94);
   text-decoration: none;
 }
@@ -158,12 +156,11 @@ footer {
   font-weight: bold;
 }
 
-
 i.far, i.fab {
   font-size: 30pt;
   background: rgba(255,255,255,0.5);
   color: rgb(46,66,99)
 }
-i.far: hover, i.fab: hover {
+i.far:hover, i.fab:hover {
   color: #E7955D;
 }
