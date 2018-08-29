@@ -47,6 +47,7 @@ h1 {
 
 /*vimeo embed*/
 iframe {
+  border: none;
   width: 50vw;
   margin: 15px;
 }

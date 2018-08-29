@@ -1,7 +1,14 @@
 'use strict'
 function renderStartPage() {
   $('main').html(`<section role="region">
-    <div class="embed-container"><iframe src="https://player.vimeo.com/video/247865289" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
+      <h2>Demo Reel</h2>
+    <div class="embed-container">
+      <iframe src="https://player.vimeo.com/video/247865289" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+    </div>
+      <h2>Marketing</h2>
+    <div class="embed-container">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/IHffm9T2yPk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
   </section>`);
 }
 
