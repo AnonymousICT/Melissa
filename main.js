@@ -1,7 +1,7 @@
 'use strict'
 function renderStartPage() {
   $('main').html(`<section role="region">
-      <h2>Demo Reel</h2>
+    <h2 class="vimeo-headings">Demo Reel</h2>
     <div class="embed-container">
       <iframe src="https://player.vimeo.com/video/247865289" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
     </div>
